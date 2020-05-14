@@ -2,8 +2,8 @@
 
 @php
     $module_name = 'Users';
-    $page_title = $module_name . ' Control';
-    $page_desc = 'Here you can [Add | Edit | Delete] ' . $module_name;
+    $page_title = 'Control ' . $module_name;
+    $page_desc = 'Here you can [ Add | Edit | Delete ] ' . $module_name;
 
 @endphp
 
@@ -31,6 +31,11 @@
                             <h4 class="card-title ">{{ $page_title }}</h4>
                             <p class="card-category">{{ $page_desc }}</p>
                         </div>
+                        <div class="col-md-4 text-right">
+                            <a href="{{ route('users.create') }}" class="btn btn-white btn-round">
+                                Add {{ $module_name }}
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="card-body">
@@ -50,9 +55,13 @@
                                         <td>{{$row->id}}</td>
                                         <td>{{$row->name}}</td>
                                         <td>{{$row->email}}</td>
-                                        <td>
-                                            <a href="#">Edit</a>
-                                            <a href="#">Delete</a>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" class="btn btn-white btn-link btn-sm" data-original-title="Edit {{ $module_name }}">
+                                                <i class="material-icons">edit</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" class="btn btn-white btn-link btn-sm" data-original-title="Delete {{ $module_name }}">
+                                                <i class="material-icons">close</i>
+                                            </button>
                                         </td>
                                     </tr>
                                 @endforeach
