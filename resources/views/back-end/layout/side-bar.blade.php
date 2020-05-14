@@ -1,4 +1,4 @@
-<div class="sidebar" data-color="purple" data-background-color="black" data-image="'assets/img/sidebar-2.jpg">
+<div class="sidebar" data-color="purple" data-background-color="black" data-image="/assets/img/sidebar-2.jpg">
 
     <div class="logo">
         <a href="http://www.creative-tim.com" class="simple-text logo-normal">
