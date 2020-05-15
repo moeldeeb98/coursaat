@@ -4,18 +4,15 @@ namespace App\Http\Controllers\BackEnd;
 
 
 use App\Models\User;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
 class UsersController extends BackEndController
 {
-    public function index(){
-        $rows = User::paginate(10);
-        return view('back-end.users.index', compact('rows'));
-    }
-
-    public function create(){
-        return view('back-end.users.create');
+    public function __construct(User $model)
+    {
+        parent::__construct($model);
     }
 
     public function store(Request $request){
@@ -27,11 +24,10 @@ class UsersController extends BackEndController
         return redirect()->route('users.index');
     }
 
-    public function edit(User $user){
-        return view('back-end.users.edit', ['user'=> $user]);
-    }
 
-    public function update(User $user, Request $request){
+    public function update($id, Request $request){
+
+        $user = User::findOrFail($id);
 
         $data = [
             'name' => $request->name,
@@ -46,9 +42,6 @@ class UsersController extends BackEndController
 
         return redirect()->route('users.edit', $user);
     }
+    
 
-    public function destroy(User $user){
-        $user->delete();
-        return redirect()->route('users.index');
-    }
 }

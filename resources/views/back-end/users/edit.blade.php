@@ -30,7 +30,7 @@
                     <p class="card-category">{{ $page_desc }}</p>
                 </div>
                 <div class="card-body">
-                    <form action="{{ route('users.update', ['user' => $user] ) }}" method="post">
+                    <form action="{{ route('users.update', ['user' => $row->id] ) }}" method="post">
                         {{ method_field('put') }}
                         @include('back-end.users.form')
                         <button type="submit" class="btn btn-primary pull-right">Update {{ $module_name }}</button>
