@@ -32,27 +32,7 @@
                 </div>
                 <div class="card-body">
                     <form action="{{ route('users.store') }}" method="post">
-                        {{ csrf_field() }}
-                        <div class="row">
-                            @php $input = "name"; @endphp
-                            <div class="col-md-6">
-                                <div class="form-group bmd-form-group">
-                                    <label class="bmd-label-floating">Username</label>
-                                    <input type="text" name="name" class="form-control">
-                                </div>
-                            </div>
-                            <div class="col-md-6" >
-                                <div class="form-group bmd-form-group">
-                                    <label class="bmd-label-floating">Email address</label>
-                                    <input type="email" name="email" class="form-control">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group bmd-form-group">
-                                    <label class="bmd-label-floating">Password</label>
-                                    <input type="password" name="password" class="form-control">
-                                </div>
-                            </div>
+                        @include('back-end.users.form')
                         <button type="submit" class="btn btn-primary pull-right">Add {{ $module_name }}</button>
                         <div class="clearfix"></div>
                     </form>

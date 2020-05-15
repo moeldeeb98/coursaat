@@ -27,15 +27,28 @@ class UsersController extends BackEndController
         return redirect()->route('users.index');
     }
 
-    public function edit($id){
-        return view('back-end.users.edit');
+    public function edit(User $user){
+        return view('back-end.users.edit', ['user'=> $user]);
     }
 
-    public function update($id){
+    public function update(User $user, Request $request){
 
+        $data = [
+            'name' => $request->name,
+            'email' => $request->email
+        ];
+
+        if ($request->has('password') && request()->get('password') != ""){
+            $data = $data + ['password' => Hash::make($request->password)];
+        }
+
+        $user->update($data);
+
+        return redirect()->route('users.edit', $user);
     }
 
-    public function delete($id){
-
+    public function destroy(User $user){
+        $user->delete();
+        return redirect()->route('users.index');
     }
 }
