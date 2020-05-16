@@ -19,13 +19,16 @@ class BackEndController extends Controller{
         $module_name = $this->getModelName();
         $page_title = 'Control ' . $this->getPluralModelName();
         $page_desc = 'Here you can [ Add | Edit | Delete ] ' . $this->getPluralModelName();
+        $folder_name = $this->getFolderName();
 
 
         $rows = $this->model;
         $rows = $this->filter($rows);
         $rows = $rows->paginate(10);
-        return view('back-end.' . $this->getFolderName() . '.index', compact('rows',
-            'module_name', 'page_title', 'page_desc'));
+        return view('back-end.' . $this->getFolderName() . '.index', compact(
+            'rows','module_name', 'page_title', 'page_desc', 'folder_name'
+            )
+        );
     }
 
     public function create(){
