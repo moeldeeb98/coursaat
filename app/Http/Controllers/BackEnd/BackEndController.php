@@ -37,10 +37,12 @@ class BackEndController extends Controller{
         $module_name = $this->getModelName();
         $page_title = 'Create ' . $module_name;
         $page_desc = 'Here you can Create ' . $module_name;
+        $folder_name = $this->getFolderName();
 
-
-        return view('back-end.' . $this->getFolderName() . '.create', compact('module_name',
-        'page_desc', 'page_title'));
+        return view('back-end.' . $folder_name . '.create', compact(
+            'module_name', 'page_desc', 'page_title', 'folder_name'
+            )
+        );
     }
 
     public function edit($id){
@@ -49,10 +51,13 @@ class BackEndController extends Controller{
         $module_name = $this->getModelName();
         $page_title =  'Edit ' . $module_name;
         $page_desc = 'Here you can Edit ' . $module_name;
+        $folder_name = $this->getFolderName();
 
         $row = $this->model->findOrFail($id);
-        return view('back-end.' . $this->getFolderName() . '.edit', compact('row', 'module_name',
-        'page_title', 'page_desc'));
+        return view('back-end.' . $folder_name . '.edit', compact(
+            'row', 'module_name', 'page_title', 'page_desc', 'folder_name'
+            )
+        );
     }
 
     public function destroy($id){

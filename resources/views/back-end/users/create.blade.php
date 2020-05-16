@@ -17,23 +17,6 @@
     @endcomponent
 
 
-    <div class="row">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header card-header-primary">
-                    <h4 class="card-title">{{ $page_title }}</h4>
-                    <p class="card-category">{{ $page_desc }}</p>
-                </div>
-                <div class="card-body">
-                    <form action="{{ route('users.store') }}" method="post">
-                        @include('back-end.users.form')
-                        <button type="submit" class="btn btn-primary pull-right">Add {{ $module_name }}</button>
-                        <div class="clearfix"></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    @include('back-end.shared.create')
 
 @endsection
