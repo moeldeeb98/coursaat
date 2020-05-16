@@ -1,11 +1,5 @@
 @extends('back-end.layout.app')
 
-@php
-    $module_name = 'User';
-    $page_title =  'Edit ' . $module_name;
-    $page_desc = 'Here you can Edit ' . $module_name;
-
-@endphp
 
 @section('title')
     {{ $page_title }}

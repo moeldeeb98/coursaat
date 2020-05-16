@@ -1,11 +1,5 @@
 @extends('back-end.layout.app')
 
-@php
-    $module_name = 'Users';
-    $page_title = 'Control ' . $module_name;
-    $page_desc = 'Here you can [ Add | Edit | Delete ] ' . $module_name;
-
-@endphp
 
 @section('title')
     {{ $page_title }}
@@ -66,12 +60,12 @@
                                                     <i class="material-icons">close</i>
                                                 </button>
                                             </form>
-
                                         </td>
                                     </tr>
                                 @endforeach
                             </tbody>
                         </table>
+                        {!! $rows->links() !!}
                     </div>
                 </div>
             </div>

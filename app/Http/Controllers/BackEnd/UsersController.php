@@ -33,7 +33,7 @@ class UsersController extends BackEndController
             $requestArray['password'] = Hash::make($requestArray['password']);
         }else{
             unset($requestArray['password']);
-        }
+           }
 
         $row->update($requestArray);
 
