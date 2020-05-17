@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d4340ddf-ba9d-4ee4-8156-d95e13b9127b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BackEnd/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BackEnd/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back-end/shared/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/shared/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back-end/shared/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/shared/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back-end/users/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/users/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/categories/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +165,8 @@
       <workItem from="1589616095881" duration="2521000" />
       <workItem from="1589657108012" duration="5598000" />
       <workItem from="1589669313907" duration="5999000" />
-      <workItem from="1589685692283" duration="2960000" />
+      <workItem from="1589685692283" duration="3883000" />
+      <workItem from="1589690942503" duration="1022000" />
     </task>
     <servers />
   </component>
@@ -184,10 +182,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="466" y="118" width="414" height="480" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1589440874851" />
-    <state x="416" y="121" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1589686561323">
+    <state x="416" y="121" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1589691347210">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="416" y="121" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589686561323" />
+    <state x="416" y="121" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589691347210" />
     <state x="0" y="0" width="1356" height="728" key="SettingsEditor" timestamp="1589440390461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
