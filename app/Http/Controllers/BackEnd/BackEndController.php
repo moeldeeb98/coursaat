@@ -4,6 +4,7 @@ namespace App\Http\Controllers\BackEnd;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class BackEndController extends Controller{
 
@@ -70,11 +71,12 @@ class BackEndController extends Controller{
     }
 
     protected function getFolderName(){
-        return strtolower(class_basename($this->model)) . 's';
+        return strtolower( $this->getPluralModelName() );
     }
 
     protected function getPluralModelName(){
-        return $this->getModelName() . 's';
+//        $plural = Str::plural('car');
+        return  Str::plural($this->getModelName());
     }
 
     protected function getModelName(){
