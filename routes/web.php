@@ -9,12 +9,17 @@ Route::get('/', function () {
 
 
 Route::namespace('BackEnd')->prefix('admin')->group(function(){
-    Route::get('/', 'Home@index')->name('admin.home');
+
+    Route::get('/', function (){
+       return redirect()->route('admin.home');
+    });
+    Route::get('home', 'Home@index')->name('admin.home');
 
     Route::resource('users', 'UsersController')->except(['show']);
     Route::resource('categories', 'CategoriesController')->except('show');
     Route::resource('skills', 'SkillsController')->except('show');
     Route::resource('tags', 'TagsController')->except('show');
+    Route::resource('pages', 'PagesController')->except('show');
 
 });
 

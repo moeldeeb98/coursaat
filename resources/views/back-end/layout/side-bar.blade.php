@@ -7,7 +7,7 @@
     </div>
     <div class="sidebar-wrapper">
         <ul class="nav">
-            <li class="nav=item ">
+            <li class="nav=item {{ is_active('home') }}">
                 <a class="nav-link" href="{{ route('admin.home') }}">
                     <i class="material-icons">dashboard</i>
                     <p>Dashboard</p>
@@ -39,6 +39,13 @@
                 <a class="nav-link" href="{{ route('tags.index') }}">
                     <i class="material-icons">tag</i>
                     <p>Tags</p>
+                </a>
+            </li>
+
+            <li class="nav=item {{ is_active('pages') }}">
+                <a class="nav-link" href="{{ route('pages.index') }}">
+                    <i class="material-icons">tag</i>
+                    <p>Pages</p>
                 </a>
             </li>
 
