@@ -1,10 +1,11 @@
 {{ csrf_field() }}
 <div class="row">
     <div class="col-md-6">
+        @php $input = 'name' @endphp
         <div class="form-group bmd-form-group">
             <label class="bmd-label-floating">Username</label>
-            <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" value="{{ isset($row) ? $row->name : '' }}">
-            @error('name')
+            <input type="text" name="{{ $input }}" class="form-control @error($input) is-invalid @enderror" value="{{ isset($row) ? $row->{$input} : '' }}">
+            @error($input)
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
                 </span>
@@ -12,10 +13,11 @@
         </div>
     </div>
     <div class="col-md-6" >
+        @php $input = 'email' @endphp
         <div class="form-group bmd-form-group">
             <label class="bmd-label-floating">Email address</label>
-            <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" value="{{ isset($row) ? $row->email : '' }}">
-            @error('email')
+            <input type="email" name="{{ $input }}" class="form-control @error($input) is-invalid @enderror" value="{{ isset($row) ? $row->{$input} : '' }}">
+            @error($input)
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
                 </span>
@@ -23,10 +25,11 @@
         </div>
     </div>
     <div class="col-md-6">
+        @php $input = 'password' @endphp
         <div class="form-group bmd-form-group">
             <label class="bmd-label-floating">Password</label>
-            <input type="password" name="password" class="form-control @error('password') is-invalid @enderror">
-            @error('password')
+            <input type="password" name="{{ $input }}" class="form-control @error($input) is-invalid @enderror">
+            @error($input)
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
                 </span>
