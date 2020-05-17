@@ -20,7 +20,7 @@ class UsersController extends BackEndController
         $requestArray['password'] = Hash::make($requestArray['password']);
         $this->model::create($requestArray);
 
-        return redirect()->route('users.index');
+        return redirect()->route( $this->getFolderName() . '.index');
     }
 
 
@@ -37,7 +37,7 @@ class UsersController extends BackEndController
 
         $row->update($requestArray);
 
-        return redirect()->route('users.edit', $row);
+        return redirect()->route( $this->getFolderName() . '.index', $row);
     }
 
 

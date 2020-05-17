@@ -8,6 +8,7 @@
             <div class="card-body">
                 <form action="{{ route( $folder_name . '.update', [$row] ) }}" method="post">
                     {{ method_field('put') }}
+                    {{ csrf_field() }}
                     @include('back-end.' . $folder_name . '.form')
                     <button type="submit" class="btn btn-primary pull-right">Update {{ $module_name }}</button>
                     <div class="clearfix"></div>
