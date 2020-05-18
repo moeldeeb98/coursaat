@@ -20,6 +20,7 @@ Route::namespace('BackEnd')->prefix('admin')->group(function(){
     Route::resource('skills', 'SkillsController')->except('show');
     Route::resource('tags', 'TagsController')->except('show');
     Route::resource('pages', 'PagesController')->except('show');
+    Route::resource('videos', 'VideosController')->except('show');
 
 });
 
