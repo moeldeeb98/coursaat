@@ -42,7 +42,7 @@
                     <tr>
                         <td>{{ $row->id }}</td>
                         <td>{{$row->name}}</td>
-                        <td>{{$row->published}}</td>
+                        <td>{{($row->published == 1)? 'published' : 'hidden'}}</td>
                         <td>{{$row->cat->name}}</td>
                         <td>{{$row->user->name}}</td>
                         <td class="td-actions text-right">

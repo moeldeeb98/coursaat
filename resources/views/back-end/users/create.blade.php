@@ -17,6 +17,16 @@
     @endcomponent
 
 
-    @include('back-end.shared.create')
+    @component('back-end.shared.create', [
+        'page_title' => $page_title,
+        'page_desc' => $page_desc
+    ])
+        <form action="{{ route( $folder_name . '.store') }}" method="post">
+            {{ csrf_field() }}
+            @include('back-end.' . $folder_name . '.form')
+            <button type="submit" class="btn btn-primary pull-right">Add {{ $module_name }}</button>
+            <div class="clearfix"></div>
+        </form>
+    @endcomponent
 
 @endsection

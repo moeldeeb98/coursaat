@@ -3,10 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="d4340ddf-ba9d-4ee4-8156-d95e13b9127b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BackEnd/BackEndController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BackEnd/BackEndController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Skill.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Skill.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back-end/layout/side-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/layout/side-bar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BackEnd/VideosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BackEnd/VideosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BackEnd/videos/Store.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/BackEnd/videos/Store.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/categories/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/categories/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/categories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/categories/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/pages/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/pages/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/pages/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/pages/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/shared/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/shared/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/shared/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/shared/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/skills/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/skills/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/skills/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/skills/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/tags/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/tags/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/tags/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/tags/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/users/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/users/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/videos/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/videos/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/videos/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/videos/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/videos/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/videos/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/videos/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/videos/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +148,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/back-end" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Requests/BackEnd/videos" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -142,6 +159,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Requests/BackEnd/videos" />
       <recent name="$PROJECT_DIR$/resources/views/back-end" />
     </key>
   </component>
@@ -169,7 +187,11 @@
       <workItem from="1589669313907" duration="5999000" />
       <workItem from="1589685692283" duration="3883000" />
       <workItem from="1589690942503" duration="9758000" />
-      <workItem from="1589778282529" duration="10054000" />
+      <workItem from="1589778282529" duration="14744000" />
+      <workItem from="1589978960616" duration="599000" />
+      <workItem from="1590050991219" duration="599000" />
+      <workItem from="1590146398302" duration="5979000" />
+      <workItem from="1590179031727" duration="1825000" />
     </task>
     <servers />
   </component>
@@ -189,6 +211,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="416" y="121" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589702773749" />
+    <state x="479" y="130" width="398" height="461" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1589792352265">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="479" y="130" width="398" height="461" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1366.728@0.0.1366.728" timestamp="1589792352265" />
+    <state x="530" y="425" width="361" height="121" key="ReplaceDuplicatesPrompt" timestamp="1589792373006">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="530" y="425" width="361" height="121" key="ReplaceDuplicatesPrompt/0.0.1366.728@0.0.1366.728" timestamp="1589792373006" />
     <state x="0" y="0" width="1356" height="728" key="SettingsEditor" timestamp="1589440390461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
