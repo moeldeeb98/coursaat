@@ -33,4 +33,8 @@ class Video extends Model
     public function tags(){
         return $this->belongsToMany(Tag::class, 'tags_videos');
     }
+
+    public function comments(){
+        return $this->hasMany(Comment::class);
+    }
 }

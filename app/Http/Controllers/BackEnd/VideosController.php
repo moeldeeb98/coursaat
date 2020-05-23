@@ -11,6 +11,8 @@ use App\Models\Video;
 
 class VideosController extends BackEndController
 {
+    use CommentTrait;
+
     public function __construct(Video $model)
     {
         parent::__construct($model);
@@ -30,7 +32,8 @@ class VideosController extends BackEndController
             'skills' => Skill::get(),
             'tags' => Tag::get(),
             'selectedSkills' => [],
-            'selectedTags' => []
+            'selectedTags' => [],
+            'comments' => []
         ];
         // for edit not create
         $video = request()->route()->parameter('video');
@@ -39,6 +42,8 @@ class VideosController extends BackEndController
                 ->skills()->pluck('skills.id')->toArray();
             $array['selectedTags'] = $this->model->find($video)
                 ->tags()->pluck('tags.id')->toArray();
+            $array['comments'] = $this->model->find($video)
+                ->comments();
         }
 
         return $array;

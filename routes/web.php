@@ -22,6 +22,8 @@ Route::namespace('BackEnd')->prefix('admin')->group(function(){
     Route::resource('pages', 'PagesController')->except('show');
     Route::resource('videos', 'VideosController')->except('show');
 
+    Route::post('comments', 'VideosController@commentStore')->name('comment.store');
+
 });
 
 Auth::routes();

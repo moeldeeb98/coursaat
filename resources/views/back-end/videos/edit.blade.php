@@ -36,4 +36,7 @@
 
     @endcomponent
 
+    @include('back-end.comments.create');
+    @include('back-end.comments.index');
+
 @endsection
