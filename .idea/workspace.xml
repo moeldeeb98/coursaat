@@ -3,9 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="d4340ddf-ba9d-4ee4-8156-d95e13b9127b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BackEnd/CommentTrait.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BackEnd/VideosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BackEnd/VideosController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/categories/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/comments/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/comments/form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/comments/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/pages/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/shared/buttons/delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/shared/buttons/delete.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/skills/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/skills/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/tags/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/tags/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/users/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/back-end/videos/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/videos/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/videos/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/videos/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +141,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/BackEnd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/back-end" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -142,9 +152,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/back-end" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/BackEnd" />
       <recent name="$PROJECT_DIR$/app/Http/Requests/BackEnd/videos" />
-      <recent name="$PROJECT_DIR$/resources/views/back-end" />
     </key>
   </component>
   <component name="RunManager">
@@ -175,7 +185,9 @@
       <workItem from="1589978960616" duration="599000" />
       <workItem from="1590050991219" duration="599000" />
       <workItem from="1590146398302" duration="5979000" />
-      <workItem from="1590179031727" duration="10041000" />
+      <workItem from="1590179031727" duration="10435000" />
+      <workItem from="1590217689312" duration="12320000" />
+      <workItem from="1590306975553" duration="10510000" />
     </task>
     <servers />
   </component>
@@ -187,14 +199,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="407" y="223" width="542" height="274" key="#Composer/0.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1589437751341" />
+    <state x="312" y="44" width="732" height="632" key="#Inspections" timestamp="1590228567417">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="312" y="44" width="732" height="632" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1590228567417" />
     <state x="466" y="118" width="414" height="480" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589440874851">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="466" y="118" width="414" height="480" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1589440874851" />
-    <state x="416" y="121" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1589702773749">
+    <state x="416" y="121" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1590332542361">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="416" y="121" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589702773749" />
+    <state x="416" y="121" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590332542361" />
     <state x="479" y="130" width="398" height="461" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1589792352265">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

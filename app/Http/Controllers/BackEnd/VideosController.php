@@ -11,7 +11,6 @@ use App\Models\Video;
 
 class VideosController extends BackEndController
 {
-    use CommentTrait;
 
     public function __construct(Video $model)
     {
@@ -43,7 +42,7 @@ class VideosController extends BackEndController
             $array['selectedTags'] = $this->model->find($video)
                 ->tags()->pluck('tags.id')->toArray();
             $array['comments'] = $this->model->find($video)
-                ->comments();
+                ->comments()->orderBy('id', 'desc')->with('user')->get();
         }
 
         return $array;

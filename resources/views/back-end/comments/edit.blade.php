@@ -19,7 +19,7 @@
     @component('back-end.shared.edit',['page_title' => $page_title,'page_desc' => $page_desc])
 
         @slot('form')
-            <form action="{{ route( $folder_name . '.update', [$row] ) }}" method="post" enctype="multipart/form-data">
+            <form action="{{ route( $folder_name . '.update', [$row] ) }}" method="post">
                 {{ method_field('put') }}
                 {{ csrf_field() }}
                 @include('back-end.' . $folder_name . '.form')
@@ -28,16 +28,6 @@
             </form>
         @endslot
 
-        @php $url = getYoutubeId($row->youtube) @endphp
-        @if($url)
-            <iframe style="margin-bottom: 20px; width: 250px" src="https://www.youtube.com/embed/{{ $url }}" frameborder="0" allowfullscreen></iframe>
-        @endif
-        <img width="250" src="{{ url('uploads/videoImages/' . $row->image) }}">
-
     @endcomponent
-
-    <div style="text-align:center;background-color:#202940; height:30px; width: 60%">
-        <a href="{{ route('comments.index', $row) }}">Control Comments</a>
-    </div>
 
 @endsection

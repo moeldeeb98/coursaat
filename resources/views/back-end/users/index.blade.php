@@ -43,7 +43,12 @@
                         <td>{{$row->email}}</td>
                         <td class="td-actions text-right">
                             @include('back-end.shared.buttons.edit')
-                            @include('back-end.shared.buttons.delete')
+                            @component('back-end.shared.buttons.delete', [
+                                'folder_name' => $folder_name,
+                                'module_name' => $module_name,
+                                'routeArray' => ['user' => $row->id]
+                                ])
+                            @endcomponent
                         </td>
                     </tr>
                 @endforeach
