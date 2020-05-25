@@ -42,7 +42,12 @@
                         <td>{{$row->name}}</td>
                         <td>{{$row->desc}}</td>
                         <td class="td-actions text-right">
-                            @include('back-end.shared.buttons.edit')
+                            @component('back-end.shared.buttons.edit', [
+                                'folder_name' => $folder_name,
+                                'module_name' => $module_name,
+                                'routeArray' => ['page' => $row->id]
+                                ])
+                            @endcomponent
                             @component('back-end.shared.buttons.delete', [
                                 'folder_name' => $folder_name,
                                 'module_name' => $module_name,

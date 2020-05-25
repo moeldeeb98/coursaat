@@ -50,9 +50,7 @@ class VideosController extends BackEndController
 
     public function store(Store $request){
 
-        $image = $request->file('image');
-        $imageName = time() . '.' . $image->getClientOriginalExtension();
-        $image->move(public_path('uploads/videoImages'), $imageName);
+        $imageName = $this->uploadImage($request);
 
         $requestArray = ['user_id' => auth()->user()->id , 'image' => $imageName] + $request->all();
         $row = $this->model::create( $requestArray );
@@ -70,9 +68,7 @@ class VideosController extends BackEndController
         $requestArray = $request->all();
 
         if($request->hasFile('image')) {
-            $image = $request->file('image');
-            $imageName = time() . '.' . $image->getClientOriginalExtension();
-            $image->move(public_path('uploads/videoImages'), $imageName);
+            $imageName = $this->uploadImage($request);
             $requestArray = ['image' => $imageName] + $requestArray;
         }
 
@@ -98,6 +94,18 @@ class VideosController extends BackEndController
         if (isset($requestArray['tags']) && !empty($requestArray['tags'])) {
             $row->tags()->sync($requestArray['tags']);
         }
+    }
+
+    /**
+     * @param Store $request
+     * @return string
+     */
+    protected function uploadImage(Store $request): string
+    {
+        $image = $request->file('image');
+        $imageName = time() . '.' . $image->getClientOriginalExtension();
+        $image->move(public_path('uploads/videoImages'), $imageName);
+        return $imageName;
     }
 
 }

@@ -3,18 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="d4340ddf-ba9d-4ee4-8156-d95e13b9127b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BackEnd/CommentTrait.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BackEnd/VideosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BackEnd/VideosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BackEnd/CommentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BackEnd/CommentsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/back-end/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/categories/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back-end/comments/create.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back-end/comments/form.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back-end/comments/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/comments/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/comments/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/comments/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/back-end/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/pages/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back-end/shared/buttons/delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/shared/buttons/delete.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back-end/shared/buttons/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/shared/buttons/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/back-end/skills/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/skills/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/back-end/tags/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/tags/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/back-end/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/users/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back-end/videos/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/videos/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/back-end/videos/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back-end/videos/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -187,7 +184,8 @@
       <workItem from="1590146398302" duration="5979000" />
       <workItem from="1590179031727" duration="10435000" />
       <workItem from="1590217689312" duration="12320000" />
-      <workItem from="1590306975553" duration="10510000" />
+      <workItem from="1590306975553" duration="16137000" />
+      <workItem from="1590383057563" duration="1639000" />
     </task>
     <servers />
   </component>

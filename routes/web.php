@@ -21,8 +21,7 @@ Route::namespace('BackEnd')->prefix('admin')->group(function(){
     Route::resource('tags', 'TagsController')->except('show');
     Route::resource('pages', 'PagesController')->except('show');
     Route::resource('videos', 'VideosController')->except('show');
-    Route::resource('videos/{video}/comments', 'CommentsController')->except('show', 'create');
-
+    Route::resource('videos/{video}/comments', 'CommentsController')->except('show', 'create', 'edit');
 });
 
 Auth::routes();

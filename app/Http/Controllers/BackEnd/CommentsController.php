@@ -38,10 +38,16 @@ class CommentsController extends Controller
         return redirect()->route( $this->folder_name . '.index', $requestArray['video_id']);
     }
 
+    public function update(Store $request, $video, $comment){
+        $requestArray = $request->all() + ['user_id' => auth()->user()->id];
+        $row = Comment::findOrFail($comment);
+        $row->update($requestArray);
+        return redirect()->route('comments.index', ['video' => $video, 'comment' => $row]);
+    }
+
     public function destroy($video_id, $comment_id)
     {
         $row = Comment::findOrFail($comment_id);
-        $video_id = $row->video->id;
         $row->delete();
         return redirect()->route($this->folder_name . '.index', $video_id );
     }

@@ -46,7 +46,12 @@
                         <td>{{$row->cat->name}}</td>
                         <td>{{$row->user->name}}</td>
                         <td class="td-actions text-right">
-                            @include('back-end.shared.buttons.edit')
+                            @component('back-end.shared.buttons.edit', [
+                                'folder_name' => $folder_name,
+                                'module_name' => $module_name,
+                                'routeArray' => ['video' => $row->id]
+                                ])
+                            @endcomponent
                             @component('back-end.shared.buttons.delete', [
                                 'folder_name' => $folder_name,
                                 'module_name' => $module_name,
