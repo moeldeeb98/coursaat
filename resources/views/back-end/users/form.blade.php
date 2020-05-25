@@ -35,6 +35,22 @@
             @enderror
         </div>
     </div>
+    <div class="col-md-6">
+        @php $input = 'group' @endphp
+        <div class="form-group bmd-form-group">
+            <label class="bmd-label-floating">User Group</label>
+            <select name="{{ $input }}" class="form-control @error($input) is-invalid @enderror">
+                <option value="admin" {{ (isset($row) && $row->{$input} == "admin") ? 'selected' : '' }}>admin</option>
+                <option value="user" {{ (isset($row) && $row->{$input} == "user") ? 'selected' : '' }}>user</option>
+            </select>
+            <input type="url" >
+            @error($input)
+            <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+        </div>
+    </div>
 </div>
 
 

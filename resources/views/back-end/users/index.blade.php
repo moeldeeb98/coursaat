@@ -32,6 +32,7 @@
                     <th>ID</th>
                     <th>Name</th>
                     <th>email</th>
+                    <th>Group</th>
                     <th class="text-right">control</th>
                 </tr>
                 </thead>
@@ -41,6 +42,7 @@
                         <td>{{$row->id}}</td>
                         <td>{{$row->name}}</td>
                         <td>{{$row->email}}</td>
+                        <td>{{$row->group}}</td>
                         <td class="td-actions text-right">
                             @component('back-end.shared.buttons.edit', [
                                 'folder_name' => $folder_name,

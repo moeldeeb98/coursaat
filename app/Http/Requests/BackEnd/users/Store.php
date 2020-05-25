@@ -27,6 +27,7 @@ class Store extends FormRequest
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string'],
+            'group' => ['required', 'string']
         ];
     }
 }
