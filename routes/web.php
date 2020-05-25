@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('frontend.landing');
 
 
 Route::namespace('BackEnd')->prefix('admin')->group(function(){
@@ -26,4 +26,8 @@ Route::namespace('BackEnd')->prefix('admin')->group(function(){
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('home', 'HomeController@index')->name('home');
+Route::get('category/{id}', 'HomeController@category')->name('front.category');
+Route::get('skill/{id}', 'HomeController@skill')->name('front.skill');
+Route::get('video/{id}', 'HomeController@video')->name('front.video');
+Route::get('tag/{id}', 'HomeController@tag')->name('front.tag');

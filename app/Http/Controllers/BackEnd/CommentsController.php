@@ -18,7 +18,7 @@ class CommentsController extends Controller
 
     public function index(){
 
-        $rows = Comment::paginate(10);
+        $rows = Comment::orderBy('id', 'desc')->paginate(10);
         return view('back-end.' . $this->folder_name . '.index', [
                 'rows' => $rows,
                 'module_name' => $this->module_name,
